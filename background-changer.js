@@ -60,6 +60,6 @@ animateBtn.addEventListener("click", () => {
   for (let i = 0; i < colorCodes.length; i++) {
     setTimeout(() => {
       body.style.backgroundColor = colorCodes[i].innerText;
-    }, 1000 * i);
+    }, 600 * i);
   }
 });

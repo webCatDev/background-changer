@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&display=swap');
 *, *::before, *::after{
     margin: 0;
     padding: 0;
@@ -11,10 +12,19 @@ html{
 
 body{
     height: 100vh;
+    font-family: 'Source Serif 4', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: thistle;
+    color: rgb(26, 24, 24);
+}
+
+
+
+::selection{
+    color: white;
+    background-color: rgb(226, 24, 226);
 }
 
 .wrapper{
@@ -35,6 +45,8 @@ border-radius: 10px;
 }
 
 button{
+    font-family: inherit;
+    color: inherit;
     border: none;
     padding: .5rem 1rem;
     background-color: rgb(227, 217, 217);
