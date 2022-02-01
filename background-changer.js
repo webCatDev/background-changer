@@ -2,20 +2,21 @@ const colorPicker = document.getElementById("color-picker");
 const addColorBtn = document.getElementById("add-color");
 const colorList = document.getElementById("color-list");
 const animateBtn = document.getElementById("animate");
-const listItems= document.getElementsByClassName("list-item")
+const listItems = document.getElementsByClassName("list-item");
 const body = document.getElementById("body");
 const listText = document.getElementById("list-text");
 
- animateBtn.disabled=true
-
- 
+animateBtn.disabled = true;
 
 colorPicker.addEventListener("change", () => {
   body.style.backgroundColor = colorPicker.value;
 });
 
 addColorBtn.addEventListener("click", () => {
+
+
   listText.remove();
+
 
   const listItem = document.createElement("li");
   const spanPreviewBox = document.createElement("span");
@@ -42,14 +43,15 @@ addColorBtn.addEventListener("click", () => {
   for (const deleteColorBtn of deleteColorButtons) {
     deleteColorBtn.addEventListener("click", () => {
       deleteColorBtn.parentElement.remove();
+       if (listItems.length < 2) {
+        animateBtn.disabled = true;
+      }
     });
   }
 
- if(listItems.length>=2){
-animateBtn.disabled=false;
- }
-
-
+  if (listItems.length >= 2) {
+    animateBtn.disabled = false;
+  }
 });
 
 const colorCodes = document.getElementsByClassName("colorCode");
