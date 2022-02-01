@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+      integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/background-changer.js" defer></script>
+    <title>Background Color Changer</title>
+  </head>
+  <body id="body">
+    <div class="wrapper">
+      <div class="color-picker-area">
+        <input type="color" id="color-picker" />
+        <button class="add-color" id="add-color">Add Color to List</button>
+      </div>
+      <div class="list-wrapper">
+        <ul class="color-list" id="color-list">
+            <p id="list-text">Add different colors to able to see animation.</p>
+        </ul>
+      </div>
+      <button id="animate">Animate</button>
+    </div>
+  </body>
+</html>
